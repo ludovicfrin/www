@@ -1,13 +1,22 @@
+/**
+ * Modules declaration
+ *
+ * @author Ludovic FRIN<ludovic@frin.fr>
+ */
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
-
 import { MdButtonModule, MdIconModule, MdListModule, MdSidenavModule, MdToolbarModule } from '@angular/material';
+import { RouterModule } from '@angular/router';
 
-import { AppComponent } from './app.component';
+import { environment } from '../environments/environment';
+import { ROUTING } from './app.routing';
+import { AppComponent } from './component/app.component';
+import { FitnessComponent } from './component/fitness/fitness.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FitnessComponent
   ],
   imports: [
     BrowserAnimationsModule,
@@ -15,7 +24,8 @@ import { AppComponent } from './app.component';
     MdIconModule,
     MdListModule,
     MdSidenavModule,
-    MdToolbarModule
+    MdToolbarModule,
+    RouterModule.forRoot(ROUTING, { enableTracing: !environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]

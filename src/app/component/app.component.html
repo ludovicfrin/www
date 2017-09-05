@@ -8,10 +8,11 @@
 
   <md-sidenav #sidenav>
     <md-nav-list>
-      <a md-list-item>Menu 1</a>
-      <md-divider></md-divider>
+      <a md-list-item routerLink="/fitness" routerLinkActive="active" i18n="@@sidenav.fitness">Fitness dashboard</a>
       <a md-list-item>Menu 2</a>
       <md-divider></md-divider>
     </md-nav-list>
   </md-sidenav>
+  
+  <router-outlet></router-outlet>
 </md-sidenav-container>
