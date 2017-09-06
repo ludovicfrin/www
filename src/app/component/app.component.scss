@@ -1,0 +1,16 @@
+@import '~@angular/material/theming';
+@import 'src/app-theme.scss';
+
+md-sidenav {
+  width: 200px;
+}
+
+.logo {
+  padding:10px 36px;
+  width:128px;
+  border-radius: 50%;
+}
+
+md-nav-list a.active {
+  color: mat-color($app-accent) !important;
+}

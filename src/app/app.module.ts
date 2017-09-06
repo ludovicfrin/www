@@ -5,7 +5,7 @@
  */
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
-import { MdButtonModule, MdIconModule, MdListModule, MdSidenavModule, MdToolbarModule } from '@angular/material';
+import { MdButtonModule, MdCardModule, MdGridListModule, MdIconModule, MdListModule, MdSidenavModule, MdToolbarModule } from '@angular/material';
 import { RouterModule } from '@angular/router';
 
 import { environment } from '../environments/environment';
@@ -21,6 +21,8 @@ import { FitnessComponent } from './component/fitness/fitness.component';
   imports: [
     BrowserAnimationsModule,
     MdButtonModule,
+    MdCardModule,
+    MdGridListModule,
     MdIconModule,
     MdListModule,
     MdSidenavModule,
