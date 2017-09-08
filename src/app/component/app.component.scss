@@ -14,3 +14,7 @@ md-sidenav {
 md-nav-list a.active {
   color: mat-color($app-accent) !important;
 }
+
+span.spacer {
+  flex: 1 1 auto;
+}

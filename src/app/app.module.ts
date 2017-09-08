@@ -5,21 +5,24 @@
  */
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { MdButtonModule, MdCardModule, MdGridListModule, MdIconModule, MdInputModule, MdListModule, MdSidenavModule, MdSnackBarModule, MdToolbarModule } from '@angular/material';
+import { MdButtonModule, MdCardModule, MdGridListModule, MdIconModule, MdInputModule, MdListModule, MdSidenavModule, MdSnackBarModule, MdToolbarModule, MdTooltipModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 
 import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
+import { AppFirebaseModule } from './app-firebase.module';
 import { AppComponent } from './component/app.component';
 import { FitnessComponent } from './component/fitness/fitness.component';
 import { LoginComponent } from './component/login/login.component';
+import { PageNotFoundComponent } from './component/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FitnessComponent,
-    LoginComponent
+    LoginComponent,
+    PageNotFoundComponent
   ],
   imports: [
     FormsModule,
@@ -33,7 +36,9 @@ import { LoginComponent } from './component/login/login.component';
     MdSidenavModule,
     MdSnackBarModule,
     MdToolbarModule,
-    AppRoutingModule
+    MdTooltipModule,
+    AppRoutingModule,
+    AppFirebaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,16 +1,16 @@
 <form name="login" (ngSubmit)="login()">
   <md-card>
-    <md-card-title i18n="@@component.login.login">Login</md-card-title>
+    <md-card-title i18n="@@login.title">Login</md-card-title>
       <md-card-content>
   		<md-form-field>
-  			<input maxlength="100" type="text" mdInput name="username" placeholder="Username" i18n-placeholder="@@component.login.username" [(ngModel)]="user.username" />
+  			<input maxlength="100" type="text" mdInput name="username" placeholder="Username" i18n-placeholder="@@login.username" [(ngModel)]="_user.username" />
   		</md-form-field>
   		<md-form-field>
-  		  	<input maxlength="100" type="password" name="password" mdInput placeholder="Password" i18n-placeholder="@@component.login.password" [(ngModel)]="user.password" />
+  		  	<input maxlength="100" type="password" name="password" mdInput placeholder="Password" i18n-placeholder="@@login.password" [(ngModel)]="_user.password" />
   	  	</md-form-field>  		
       </md-card-content>
     <md-card-actions align="end">
-  	  <button type="submit" md-raised-button color="accent" i18n="@@component.login.submit">Submit</button>
+  	  <button type="submit" md-raised-button color="accent" i18n="@@login.submit">Submit</button>
     </md-card-actions>
   </md-card>
   
