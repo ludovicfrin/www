@@ -20,7 +20,7 @@ export class GaugeChartComponent extends ChartComponent implements OnInit {
    */
   public ngOnInit(): void {
     let self = this;
-    this._options = {
+    this.options = {
       chart: {
         type: 'solidgauge'
       }, title: {

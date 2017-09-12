@@ -7,8 +7,8 @@ import { EventEmitter, Input } from '@angular/core';
 
 export abstract class ChartComponent {
 
+  public options: any;
   protected _chart: any;
-  protected _options: any;
     
   @Input('unit')
   protected _unit: String;

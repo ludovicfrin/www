@@ -6,7 +6,7 @@
   	</button>
     <span>Ludovic FRIN</span>
     <span class="spacer"></span>
-    <span *ngIf="_isLoggedIn" mdTooltip="Logout" i18n-mdTooltip="@@component.toolbar.logout">
+    <span *ngIf="isLoggedIn" mdTooltip="Logout" i18n-mdTooltip="@@component.toolbar.logout">
       <button md-icon-button md-button (click)="logout()">
         <md-icon>exit_to_app</md-icon>
       </button>
@@ -17,7 +17,7 @@
   <md-sidenav #navigation>
   	<a routerLink="/"><img class="logo" src="/assets/img/logo.png" alt="Ludovic FRIN" /></a>
     <md-nav-list>
-      <a md-list-item *ngIf="_isLoggedIn" routerLink="/fitness" routerLinkActive="active" i18n="@@component.navigation.fitness">Fitness dashboard</a>
+      <a md-list-item *ngIf="isLoggedIn" routerLink="/fitness" routerLinkActive="active" i18n="@@component.navigation.fitness">Fitness dashboard</a>
       <md-divider></md-divider>
     </md-nav-list>
   </md-sidenav>

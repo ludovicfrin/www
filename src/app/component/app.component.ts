@@ -15,7 +15,7 @@ import { AuthService } from '../service/auth.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  private _isLoggedIn: boolean;
+  public isLoggedIn: boolean;
 
   /**
    * Constructor
@@ -32,7 +32,7 @@ export class AppComponent implements OnInit {
     */
    public ngOnInit(): void {
      this._authService.getAuthStatus().subscribe(
-       auth => { this._isLoggedIn = auth != null }
+       auth => { this.isLoggedIn = auth != null }
      );
    }
    

@@ -3,10 +3,10 @@
     <md-card-title i18n="@@login.title">Login</md-card-title>
       <md-card-content>
   		<md-form-field>
-  			<input maxlength="100" type="text" mdInput name="username" placeholder="Username" i18n-placeholder="@@login.username" [(ngModel)]="_user.username" />
+  			<input maxlength="100" type="text" mdInput name="username" placeholder="Username" i18n-placeholder="@@login.username" [(ngModel)]="user.username" />
   		</md-form-field>
   		<md-form-field>
-  		  	<input maxlength="100" type="password" name="password" mdInput placeholder="Password" i18n-placeholder="@@login.password" [(ngModel)]="_user.password" />
+  		  	<input maxlength="100" type="password" name="password" mdInput placeholder="Password" i18n-placeholder="@@login.password" [(ngModel)]="user.password" />
   	  	</md-form-field>  		
       </md-card-content>
     <md-card-actions align="end">

@@ -21,7 +21,7 @@ const ROUTING: Routes = [
   }, {
     path: 'fitness',
     component: FitnessComponent,
-    //canActivate: [AuthGuard]
+    canActivate: [AuthGuard]
   }, {
     path: '',
     redirectTo: '/fitness',

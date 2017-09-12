@@ -16,7 +16,7 @@ import { AuthService } from '../../service/auth.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  private _user = new User();
+  public user = new User();
   private _returnUrl: string;
   
   /**
@@ -43,7 +43,7 @@ export class LoginComponent implements OnInit {
    * Login action
    */
   public login(): void {
-    this._authService.emailPasswordLogin(this._user)
+    this._authService.emailPasswordLogin(this.user)
     	.then (success => {
     	  this._router.navigate([ this._returnUrl ]);
     	}).catch(error => {

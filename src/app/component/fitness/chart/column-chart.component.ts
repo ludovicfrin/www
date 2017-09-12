@@ -21,7 +21,7 @@ export class ColumnChartComponent extends ChartComponent implements OnInit {
   public ngOnInit(): void {
     let self = this;
       
-    this._options = {
+    this.options = {
       chart: {
         type: 'column'
       }, title : {
