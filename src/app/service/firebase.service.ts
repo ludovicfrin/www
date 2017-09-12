@@ -9,15 +9,14 @@ import { Observable } from 'rxjs/Observable';
 import { Subject } from 'rxjs/Subject';
 
 export abstract class FirebaseService<E> {
-  protected _observable$: FirebaseListObservable<E[]>;
-
+  private _observable$: FirebaseListObservable<E[]>;
+  
   /**
    * Constructor
    *
    * @param _db Firebase database service
-   * @param path Entity path access
    */
-  constructor(protected _db: AngularFireDatabase, public path: string) {	
+  constructor(protected _db: AngularFireDatabase) {	
   }
 
   /**
@@ -32,23 +31,25 @@ export abstract class FirebaseService<E> {
 
   /**
    * Read entities
-   *
+   * 
+   * @param path Path
    * @param query Query parameters
    * @return Observable
    */
-  public read(): Observable<E[]> {
-    this._observable$ = this._db.list(this.path);
+  public read(path: string, query: any): Observable<E[]> {
+    this._observable$ = this._db.list(path, { query: query });
     return this._observable$;
   }
 
   /**
    * Read an entity by id
-   *
+   * 
+   * @param path Path
    * @param id Identifier
    * @return Observable
    */
-  public readById(id: string): Observable<E> {
-   return this._db.object(this.path + '/' + id);
+  public readById(path: string, id: string): Observable<E> {
+   return this._db.object(path + '/' + id);
   }
 
   /**
