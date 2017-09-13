@@ -8,7 +8,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "extract-i18n": "ng xi18n --output-path src/i18n && xliffmerge --profile xliffmerge.json en fr"
   },
   "private": true,
   "dependencies": {
@@ -30,6 +31,7 @@
     "core-js": "^2.4.1",
     "firebase": "^4.3.1",
     "moment": "^2.18.1",
+    "ngx-i18nsupport": "^0.8.5",
     "rxjs": "^5.4.2",
     "zone.js": "^0.8.14"
   },

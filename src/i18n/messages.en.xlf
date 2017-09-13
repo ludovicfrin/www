@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template" target-language="en">
+    <body>
+      <trans-unit id="fitness.step.current" datatype="html">
+        <source>Today steps</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/fitness/fitness.component.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      <target state="final">Today steps</target></trans-unit>
+      <trans-unit id="fitness.step.unit" datatype="html">
+        <source>steps</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/fitness/fitness.component.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/fitness/fitness.component.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/fitness/fitness.component.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      <target state="final">steps</target></trans-unit>
+      <trans-unit id="fitness.step.average" datatype="html">
+        <source>Average steps</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/fitness/fitness.component.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      <target state="final">Average steps</target></trans-unit>
+      <trans-unit id="fitness.distance" datatype="html">
+        <source>Distance</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/fitness/fitness.component.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      <target state="final">Distance</target></trans-unit>
+      <trans-unit id="fitness.step.details" datatype="html">
+        <source>Steps details</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/fitness/fitness.component.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      <target state="final">Steps details</target></trans-unit>
+      <trans-unit id="login.title" datatype="html">
+        <source>Login</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/login/login.component.ts</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      <target state="final">Login</target></trans-unit>
+      <trans-unit id="login.username" datatype="html">
+        <source>Username</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/login/login.component.ts</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      <target state="final">Username</target></trans-unit>
+      <trans-unit id="login.password" datatype="html">
+        <source>Password</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/login/login.component.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      <target state="final">Password</target></trans-unit>
+      <trans-unit id="login.submit" datatype="html">
+        <source>Submit</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/login/login.component.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      <target state="final">Submit</target></trans-unit>
+      <trans-unit id="page-not-found.title" datatype="html">
+        <source>404 Error</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/page-not-found/page-not-found.component.ts</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      <target state="final">404 Error</target></trans-unit>
+      <trans-unit id="page-not-found.text" datatype="html">
+        <source>Woops. Looks like this page doesn't exist.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/page-not-found/page-not-found.component.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      <target state="final">Woops. Looks like this page doesn't exist.</target></trans-unit>
+      <trans-unit id="component.toolbar.logout" datatype="html">
+        <source>Logout</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/app.component.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      <target state="final">Logout</target></trans-unit>
+      <trans-unit id="component.navigation.fitness" datatype="html">
+        <source>Fitness dashboard</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/app.component.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      <target state="final">Fitness dashboard</target></trans-unit>
+    <trans-unit id="login.error" datatype="html">
+        <source>Username or password incorrect</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/login/login.component.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      <target state="final">Username or password incorrect</target></trans-unit></body>
+  </file>
+</xliff>

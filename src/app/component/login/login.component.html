@@ -1,17 +1,17 @@
-<form name="login" (ngSubmit)="login()">
+<form name="login" (ngSubmit)="login(loginForm.value)" #loginForm="ngForm">
   <md-card>
     <md-card-title i18n="@@login.title">Login</md-card-title>
       <md-card-content>
   		<md-form-field>
-  			<input maxlength="100" type="text" mdInput name="username" placeholder="Username" i18n-placeholder="@@login.username" [(ngModel)]="user.username" />
+  			<input mdInput ngModel maxlength="100" type="email" name="username" placeholder="Username" i18n-placeholder="@@login.username" required />
   		</md-form-field>
   		<md-form-field>
-  		  	<input maxlength="100" type="password" name="password" mdInput placeholder="Password" i18n-placeholder="@@login.password" [(ngModel)]="user.password" />
+  		  	<input mdInput ngModel maxlength="100" type="password" name="password" placeholder="Password" i18n-placeholder="@@login.password" required />
   	  	</md-form-field>  		
       </md-card-content>
     <md-card-actions align="end">
-  	  <button type="submit" md-raised-button color="accent" i18n="@@login.submit">Submit</button>
+  	  <button type="submit" [disabled]="loginForm.invalid" md-raised-button color="accent" i18n="@@login.submit">Submit</button>
+  	  <span #errorMessage class="i18n" i18n="@@login.error">Username or password incorrect</span>
     </md-card-actions>
   </md-card>
-  
 </form>

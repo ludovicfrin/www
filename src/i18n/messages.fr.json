@@ -1,0 +1,30 @@
+{
+    "fitness": {
+        "step": {
+            "current": "Pas aujourd'hui",
+            "unit": "pas",
+            "average": "Moyenne de pas",
+            "details": "Détail des pas"
+        },
+        "distance": "Distance"
+    },
+    "login": {
+        "title": "Identification",
+        "username": "Identifiant",
+        "password": "Mot de passe",
+        "submit": "Envoyer",
+        "error": ""
+    },
+    "page-not-found": {
+        "title": "Erreur 404",
+        "text": "Oups. Il semble que la page n'existe pas."
+    },
+    "component": {
+        "toolbar": {
+            "logout": "Déconexion"
+        },
+        "navigation": {
+            "fitness": "Fitness"
+        }
+    }
+}

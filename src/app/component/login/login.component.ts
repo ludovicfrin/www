@@ -3,7 +3,7 @@
  *
  * @author Ludovic FRIN<ludovic@frin.fr>
  */
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { MdSnackBar } from '@angular/material';
 
@@ -16,8 +16,10 @@ import { AuthService } from '../../service/auth.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  public user = new User();
   private _returnUrl: string;
+    
+  @ViewChild('errorMessage')
+  private _errorMessage: ElementRef;
   
   /**
    * Constructor
@@ -28,7 +30,7 @@ export class LoginComponent implements OnInit {
    * @param _snackBar Snackbar to display error messages 
    */
   constructor(private _authService: AuthService, private _route: ActivatedRoute, private _router: Router, private _snackBar: MdSnackBar) { }
-  
+    
   /**
    * Initialization
    * - Logout if a session exists
@@ -40,14 +42,16 @@ export class LoginComponent implements OnInit {
   }
   
   /**
-   * Login action
+   * User login
+   * 
+   * @param user User
    */
-  public login(): void {
-    this._authService.emailPasswordLogin(this.user)
-    	.then (success => {
-    	  this._router.navigate([ this._returnUrl ]);
-    	}).catch(error => {
-    	  this._snackBar.open("Username or password incorrect", "", { duration: 2000 });
-    	});
+  public login(user: User): void {
+    this._authService.emailPasswordLogin(user)
+      .then (success => {
+        this._router.navigate([ this._returnUrl ]);
+      }).catch(error => {
+        this._snackBar.open(this._errorMessage.nativeElement.textContent, "", { duration: 2000 });
+      });
   }
 }

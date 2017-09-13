@@ -50,7 +50,6 @@ export class GaugeChartComponent extends ChartComponent implements OnInit {
             formatter: function () {
               let result = '<span style="font-size:3em; font-weight: bold">' + this.y + '</span> ' + self._unit;
               if (self._goal) {
-                  console.log('ok');
                 result += '<br /><span style="font-size:0.8em; font-weight: normal"> ';
                 
                 if (self._goal == this.y) {
@@ -60,10 +59,8 @@ export class GaugeChartComponent extends ChartComponent implements OnInit {
                 } else {
                   result += '&gt;';
                 }
-                
                 result += ' ' + self._goal + ' ' + self._unit + '</span>';
               }
-                console.log(result);
               return result;
             } 
           },

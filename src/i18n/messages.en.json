@@ -1,0 +1,30 @@
+{
+    "fitness": {
+        "step": {
+            "current": "Today steps",
+            "unit": "steps",
+            "average": "Average steps",
+            "details": "Steps details"
+        },
+        "distance": "Distance"
+    },
+    "login": {
+        "title": "Login",
+        "username": "Username",
+        "password": "Password",
+        "submit": "Submit",
+        "error": "Username or password incorrect"
+    },
+    "page-not-found": {
+        "title": "404 Error",
+        "text": "Woops. Looks like this page doesn't exist."
+    },
+    "component": {
+        "toolbar": {
+            "logout": "Logout"
+        },
+        "navigation": {
+            "fitness": "Fitness dashboard"
+        }
+    }
+}

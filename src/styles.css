@@ -108,3 +108,7 @@ html, body, app-root, md-sidenav-container {
 md-card {
   min-height:100px;
 }
+
+.i18n {
+  display:none;	
+}
