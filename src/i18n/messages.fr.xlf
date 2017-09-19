@@ -2,125 +2,378 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en" datatype="plaintext" original="ng2.template" target-language="fr">
     <body>
-      <trans-unit id="fitness.step.current" datatype="html">
-        <source>Today steps</source>
+      <trans-unit id="page-not-found.title" datatype="html">
+        <source>404 Error</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">app/component/fitness/fitness.component.ts</context>
+          <context context-type="sourcefile">app/shared/page-not-found.component.ts</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <target state="new">Erreur 404</target>
+        </trans-unit>
+      <trans-unit id="page-not-found.text" datatype="html">
+        <source>Woops. Looks like this page doesn't exist.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/shared/page-not-found.component.ts</context>
           <context context-type="linenumber">4</context>
         </context-group>
-        <target state="new">Pas aujourd'hui</target>
-      </trans-unit>
-      <trans-unit id="fitness.step.unit" datatype="html">
-        <source>steps</source>
+        <target state="new">Oups! Il semble que cette page n'existe pas</target>
+        </trans-unit>
+      <trans-unit id="component.navigation.fitness" datatype="html">
+        <source>Fitness</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">app/component/fitness/fitness.component.ts</context>
+          <context context-type="sourcefile">app/shared/sidenav.component.ts</context>
           <context context-type="linenumber">5</context>
         </context-group>
+        <target state="new">Fitness</target>
+        </trans-unit>
+      <trans-unit id="component.toolbar.logout" datatype="html">
+        <source>Logout</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">app/component/fitness/fitness.component.ts</context>
-          <context context-type="linenumber">11</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/component/fitness/fitness.component.ts</context>
-          <context context-type="linenumber">23</context>
-        </context-group>
-        <target state="new">pas</target>
-      </trans-unit>
-      <trans-unit id="fitness.step.average" datatype="html">
-        <source>Average steps</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/component/fitness/fitness.component.ts</context>
+          <context context-type="sourcefile">app/shared/sidenav.component.ts</context>
           <context context-type="linenumber">10</context>
         </context-group>
-        <target state="new">Moyenne de pas</target>
-      </trans-unit>
-      <trans-unit id="fitness.distance" datatype="html">
-        <source>Distance</source>
+        <target state="new">Déconnexion</target>
+        </trans-unit>
+      <trans-unit id="fitness.title" datatype="html">
+        <source>Fitness Dashboard</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">app/component/fitness/fitness.component.ts</context>
-          <context context-type="linenumber">16</context>
+          <context context-type="sourcefile">app/fitness/fitness.component.ts</context>
+          <context context-type="linenumber">2</context>
         </context-group>
-        <target state="new">Distance</target>
+        <target state="new">Tableau de bord Fitness</target>
       </trans-unit>
-      <trans-unit id="fitness.step.details" datatype="html">
+      <trans-unit id="fitness.step.unit" datatype="html">
+        <source>steps</source>        
+        <target state="new">pas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/fitness/fitness.component.ts</context>
+          <context context-type="linenumber">8</context>
+          </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/fitness/fitness.component.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/fitness/step/step.component.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>  
+      <trans-unit id="fitness.step.title" datatype="html">
         <source>Steps details</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/component/fitness/fitness.component.ts</context>
-          <context context-type="linenumber">22</context>
-        </context-group>
         <target state="new">Détail des pas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/fitness/step/step.component.ts</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
       </trans-unit>
       <trans-unit id="login.title" datatype="html">
         <source>Login</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">app/component/login/login.component.ts</context>
-          <context context-type="linenumber">3</context>
+          <context context-type="sourcefile">app/login/login.component.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/login/login.component.ts</context>
+          <context context-type="linenumber">4</context>
         </context-group>
         <target state="new">Identification</target>
       </trans-unit>
       <trans-unit id="login.username" datatype="html">
         <source>Username</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">app/component/login/login.component.ts</context>
-          <context context-type="linenumber">6</context>
+          <context context-type="sourcefile">app/login/login.component.ts</context>
+          <context context-type="linenumber">7</context>
         </context-group>
         <target state="new">Identifiant</target>
-        </trans-unit>
+      </trans-unit>
       <trans-unit id="login.password" datatype="html">
         <source>Password</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">app/component/login/login.component.ts</context>
-          <context context-type="linenumber">9</context>
+          <context context-type="sourcefile">app/login/login.component.ts</context>
+          <context context-type="linenumber">10</context>
         </context-group>
         <target state="new">Mot de passe</target>
       </trans-unit>
       <trans-unit id="login.submit" datatype="html">
         <source>Submit</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">app/component/login/login.component.ts</context>
-          <context context-type="linenumber">13</context>
+          <context context-type="sourcefile">app/login/login.component.ts</context>
+          <context context-type="linenumber">14</context>
         </context-group>
         <target state="new">Envoyer</target>
       </trans-unit>
-      <trans-unit id="page-not-found.title" datatype="html">
-        <source>404 Error</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/component/page-not-found/page-not-found.component.ts</context>
-          <context context-type="linenumber">3</context>
-        </context-group>
-        <target state="new">Erreur 404</target>
-      </trans-unit>
-      <trans-unit id="page-not-found.text" datatype="html">
-        <source>Woops. Looks like this page doesn't exist.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/component/page-not-found/page-not-found.component.ts</context>
-          <context context-type="linenumber">4</context>
-        </context-group>
-        <target state="new">Oups. Il semble que la page n'existe pas.</target>
-      </trans-unit>
-      <trans-unit id="component.toolbar.logout" datatype="html">
-        <source>Logout</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/component/app.component.ts</context>
-          <context context-type="linenumber">9</context>
-        </context-group>
-        <target state="new">Déconexion</target>
-      </trans-unit>
-      <trans-unit id="component.navigation.fitness" datatype="html">
-        <source>Fitness dashboard</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/component/app.component.ts</context>
-          <context context-type="linenumber">20</context>
-        </context-group>
-        <target state="new">Fitness</target>
-      </trans-unit>
-    <trans-unit id="login.error" datatype="html">
+      <trans-unit id="login.error" datatype="html">
         <source>Username or password incorrect</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">app/component/login/login.component.ts</context>
-          <context context-type="linenumber">14</context>
+          <context context-type="sourcefile">app/login/login.component.ts</context>
+          <context context-type="linenumber">15</context>
         </context-group>
         <target state="new">Identifiant ou mot de passe incorrect</target>
-      </trans-unit></body>
+      </trans-unit>
+    <trans-unit id="fitness.step.current.title" datatype="html">
+        <source>Today steps</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/fitness/fitness.component.ts</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <target state="new">Pas aujourd'hui</target>
+      </trans-unit>
+      <trans-unit id="fitness.step.average.title" datatype="html">
+        <source>Average steps</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/fitness/fitness.component.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <target state="new">Moyenne des pas</target>
+      </trans-unit>
+      <trans-unit id="fitness.step.config.period.thisweek" datatype="html">
+        <source>This week</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/fitness/fitness.component.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/fitness/fitness.component.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/fitness/step/step.component.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <target state="new">Cette semaine</target>
+      </trans-unit>
+      <trans-unit id="fitness.step.config.period.thismonth" datatype="html">
+        <source>This month</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/fitness/fitness.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/fitness/fitness.component.ts</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/fitness/step/step.component.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <target state="new">Ce mois</target>
+      </trans-unit>
+      <trans-unit id="fitness.step.config.period.thisyear" datatype="html">
+        <source>This year</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/fitness/fitness.component.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/fitness/fitness.component.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/fitness/step/step.component.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <target state="new">Cette année</target>
+      </trans-unit>
+      <trans-unit id="fitness.step.success.title" datatype="html">
+        <source>Steps success</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/fitness/fitness.component.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <target state="new">Objectif de pas atteint</target>
+      </trans-unit>
+      <trans-unit id="fitness.distance.title" datatype="html">
+        <source>Distance</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/fitness/fitness.component.ts</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+        <target state="new">Distance</target>
+      </trans-unit>
+      <trans-unit id="fitness.distance.config.period.thisweek" datatype="html">
+        <source>This week</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/fitness/fitness.component.ts</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+        <target state="new">Cette semaine</target>
+      </trans-unit>
+      <trans-unit id="fitness.distance.config.period.thismonth" datatype="html">
+        <source>This month</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/fitness/fitness.component.ts</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+        <target state="new">Ce mois</target>
+      </trans-unit>
+      <trans-unit id="fitness.distance.config.period.thisyear" datatype="html">
+        <source>This year</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/fitness/fitness.component.ts</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+        <target state="new">Cette année</target>
+      </trans-unit>
+      <trans-unit id="fitness.step.config.title" datatype="html">
+        <source>Configuration</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/fitness/step/step.component.ts</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <target state="new">Configuration</target>
+      </trans-unit>
+      <trans-unit id="fitness.step.config.scale.raw" datatype="html">
+        <source>No scale</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/fitness/step/step.component.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <target state="new">Valeurs brutes</target>
+      </trans-unit>
+      <trans-unit id="fitness.step.config.scale.day" datatype="html">
+        <source>Day</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/fitness/step/step.component.ts</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <target state="new">Jour</target>
+      </trans-unit>
+      <trans-unit id="fitness.step.config.scale.week" datatype="html">
+        <source>Week</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/fitness/step/step.component.ts</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <target state="new">Semaine</target>
+      </trans-unit>
+      <trans-unit id="fitness.step.config.scale.month" datatype="html">
+        <source>Month</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/fitness/step/step.component.ts</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <target state="new">Mois</target>
+      </trans-unit>
+      <trans-unit id="fitness.step.config.scale.year" datatype="html">
+        <source>Year</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/fitness/step/step.component.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <target state="new">Année</target>
+      </trans-unit>
+      <trans-unit id="fitness.step.config.scale.title" datatype="html">
+        <source>Scale</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/fitness/step/step.component.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <target state="new">Echelle</target>
+      </trans-unit>
+      <trans-unit id="fitness.step.config.period.today" datatype="html">
+        <source>Today</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/fitness/step/step.component.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <target state="new">Aujourd'hui</target>
+      </trans-unit>
+      <trans-unit id="fitness.step.config.period.yesterday" datatype="html">
+        <source>Yesterday</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/fitness/step/step.component.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <target state="new">Hier</target>
+      </trans-unit>
+      <trans-unit id="fitness.step.config.period.lastweek" datatype="html">
+        <source>Last week</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/fitness/step/step.component.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <target state="new">Semaine dernière</target>
+      </trans-unit>
+      <trans-unit id="fitness.step.config.period.lastmonth" datatype="html">
+        <source>Last month</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/fitness/step/step.component.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <target state="new">Mois dernier</target>
+      </trans-unit>
+      <trans-unit id="fitness.step.config.period.lastyear" datatype="html">
+        <source>Last year</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/fitness/step/step.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      <target state="new">Année dernière</target>
+      </trans-unit>
+      <trans-unit id="fitness.step.config.period.lastsevendays" datatype="html">
+        <source>Last 7 days</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/fitness/step/step.component.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <target state="new">7 derniers jours</target>
+      </trans-unit>
+      <trans-unit id="fitness.step.config.period.lastthirtydays" datatype="html">
+        <source>Last 30 days</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/fitness/step/step.component.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <target state="new">30 derniers jours</target>
+      </trans-unit>
+      <trans-unit id="fitness.step.config.period.custom" datatype="html">
+        <source>Customize</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/fitness/step/step.component.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <target state="new">Personnaliser</target>
+      </trans-unit>
+      <trans-unit id="fitness.step.config.period.title" datatype="html">
+        <source>Period</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/fitness/step/step.component.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <target state="new">Période</target>
+      </trans-unit>
+      <trans-unit id="fitness.step.config.period.start" datatype="html">
+        <source>Start</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/fitness/step/step.component.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      <target state="new">Début</target>
+      </trans-unit>
+      <trans-unit id="fitness.step.config.period.end" datatype="html">
+        <source>End</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/fitness/step/step.component.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+        <target state="new">Fin</target>
+      </trans-unit>
+      <trans-unit id="fitness.step.config.cancel" datatype="html">
+        <source>Cancel</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/fitness/step/step.component.ts</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      <target state="new">Anunler</target>
+      </trans-unit>
+      <trans-unit id="fitness.step.config.submit" datatype="html">
+        <source>Submit</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/fitness/step/step.component.ts</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+        <target state="new">Valider</target>
+      </trans-unit>
+    </body>
   </file>
 </xliff>

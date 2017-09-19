@@ -1,0 +1,11 @@
+<md-sidenav-container>
+  <lf-toolbar
+    title="Steps details"
+    i18n-title="@@fitness.step.title" 
+    [navButton]="{ icon: 'arrow_back', action: 'link', target: '/fitness' }"
+    [actionButtons] = "[{ icon: 'settings', action: 'function', target: 'openConfiguration', component: this }]">
+  </lf-toolbar>
+  <md-card>
+    <md-card-content><lf-column-chart #chart unit="steps" i18n-unit="@@fitness.step.unit" [goal]="stepsGoal"></lf-column-chart></md-card-content>
+  </md-card>
+</md-sidenav-container>

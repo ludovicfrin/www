@@ -1,30 +1,76 @@
 {
-    "fitness": {
-        "step": {
-            "current": "Pas aujourd'hui",
-            "unit": "pas",
-            "average": "Moyenne de pas",
-            "details": "Détail des pas"
+    "page-not-found": {
+        "title": "Erreur 404",
+        "text": "Oups! Il semble que cette page n'existe pas"
+    },
+    "component": {
+        "navigation": {
+            "fitness": "Fitness"
         },
-        "distance": "Distance"
+        "toolbar": {
+            "logout": "Déconnexion"
+        }
+    },
+    "fitness": {
+        "title": "Tableau de bord Fitness",
+        "step": {
+            "unit": "pas",
+            "title": "Détail des pas",
+            "current": {
+                "title": "Pas aujourd'hui"
+            },
+            "average": {
+                "title": "Moyenne des pas"
+            },
+            "config": {
+                "period": {
+                    "thisweek": "Cette semaine",
+                    "thismonth": "Ce mois",
+                    "thisyear": "Cette année",
+                    "today": "Aujourd'hui",
+                    "yesterday": "Hier",
+                    "lastweek": "Semaine dernière",
+                    "lastmonth": "Mois dernier",
+                    "lastyear": "Année dernière",
+                    "lastsevendays": "7 derniers jours",
+                    "lastthirtydays": "30 derniers jours",
+                    "custom": "Personnaliser",
+                    "title": "Période",
+                    "start": "Début",
+                    "end": "Fin"
+                },
+                "title": "Configuration",
+                "scale": {
+                    "raw": "Valeurs brutes",
+                    "day": "Jour",
+                    "week": "Semaine",
+                    "month": "Mois",
+                    "year": "Année",
+                    "title": "Echelle"
+                },
+                "cancel": "Anunler",
+                "submit": "Valider"
+            },
+            "success": {
+                "title": "Objectif de pas atteint"
+            }
+        },
+        "distance": {
+            "title": "Distance",
+            "config": {
+                "period": {
+                    "thisweek": "Cette semaine",
+                    "thismonth": "Ce mois",
+                    "thisyear": "Cette année"
+                }
+            }
+        }
     },
     "login": {
         "title": "Identification",
         "username": "Identifiant",
         "password": "Mot de passe",
         "submit": "Envoyer",
-        "error": ""
-    },
-    "page-not-found": {
-        "title": "Erreur 404",
-        "text": "Oups. Il semble que la page n'existe pas."
-    },
-    "component": {
-        "toolbar": {
-            "logout": "Déconexion"
-        },
-        "navigation": {
-            "fitness": "Fitness"
-        }
+        "error": "Identifiant ou mot de passe incorrect"
     }
 }

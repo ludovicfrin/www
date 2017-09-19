@@ -1,0 +1,39 @@
+<form name="config" #configForm="ngForm">
+  <h1 md-dialog-title i18n="@@fitness.step.config.title">Configuration</h1>
+  <div md-dialog-content>
+    <md-select name="scale" placeholder="Scale" i18n-placeholder="@@fitness.step.config.scale.title" required [(ngModel)]="config.scale">
+      <md-option value="raw" i18n="@@fitness.step.config.scale.raw">No scale</md-option>
+      <md-option value="day" i18n="@@fitness.step.config.scale.day">Day</md-option>
+      <md-option value="week" i18n="@@fitness.step.config.scale.week">Week</md-option>
+      <md-option value="month" i18n="@@fitness.step.config.scale.month">Month</md-option>
+      <md-option value="year" i18n="@@fitness.step.config.scale.year">Year</md-option>
+    </md-select>
+    <md-select name="period" placeholder="Period" i18n-placeholder="@@fitness.step.config.period.title" required [(ngModel)]="config.period">
+      <md-option value="today" i18n="@@fitness.step.config.period.today">Today</md-option>
+      <md-option value="yesterday" i18n="@@fitness.step.config.period.yesterday">Yesterday</md-option>
+      <md-option value="thisweek" i18n="@@fitness.step.config.period.thisweek">This week</md-option>
+      <md-option value="lastweek" i18n="@@fitness.step.config.period.lastweek">Last week</md-option>
+      <md-option value="thismonth" i18n="@@fitness.step.config.period.thismonth">This month</md-option>
+      <md-option value="lastmonth" i18n="@@fitness.step.config.period.lastmonth">Last month</md-option>
+      <md-option value="thisyear" i18n="@@fitness.step.config.period.thisyear">This year</md-option>
+      <md-option value="lastyear" i18n="@@fitness.step.config.period.lastyear">Last year</md-option>
+      <md-option value="lastsevendays" i18n="@@fitness.step.config.period.lastsevendays">Last 7 days</md-option>
+      <md-option value="lastthirtydays" i18n="@@fitness.step.config.period.lastthirtydays">Last 30 days</md-option>
+      <md-option value="custom" i18n="@@fitness.step.config.period.custom">Customize</md-option>
+    </md-select>
+    <md-form-field *ngIf="config.period=='custom'">
+      <input mdInput  [mdDatepicker]="start" name="start" placeholder="Start" i18n-placeholder="@@fitness.step.config.period.start" readonly [(ngModel)]="config.start" />
+      <md-datepicker-toggle mdSuffix [for]="start"></md-datepicker-toggle>
+      <md-datepicker #start></md-datepicker>
+    </md-form-field>
+    <md-form-field *ngIf="config.period=='custom'">
+      <input mdInput  [mdDatepicker]="end" name="end" placeholder="End" i18n-placeholder="@@fitness.step.config.period.end" readonly [(ngModel)]="config.end" />
+      <md-datepicker-toggle mdSuffix [for]="end"></md-datepicker-toggle>
+      <md-datepicker #end></md-datepicker>
+    </md-form-field>    
+  </div>
+  <div md-dialog-actions align="end">
+    <button md-raised-button type="button" [md-dialog-close] i18n="@@fitness.step.config.cancel">Cancel</button>
+    <button md-raised-button type="button" color="accent" [disabled]="configForm.invalid" [md-dialog-close]="config" i18n="@@fitness.step.config.submit">Submit</button>
+  </div>
+</form>

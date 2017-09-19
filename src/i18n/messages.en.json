@@ -1,12 +1,70 @@
 {
-    "fitness": {
-        "step": {
-            "current": "Today steps",
-            "unit": "steps",
-            "average": "Average steps",
-            "details": "Steps details"
+    "page-not-found": {
+        "title": "404 Error",
+        "text": "Woops. Looks like this page doesn't exist."
+    },
+    "component": {
+        "navigation": {
+            "fitness": "Fitness"
         },
-        "distance": "Distance"
+        "toolbar": {
+            "logout": "Logout"
+        }
+    },
+    "fitness": {
+        "title": "Fitness Dashboard",
+        "step": {
+            "unit": "steps",
+            "title": "Steps details",
+            "current": {
+                "title": "Today steps"
+            },
+            "average": {
+                "title": "Average steps"
+            },
+            "config": {
+                "period": {
+                    "thisweek": "This week",
+                    "thismonth": "This month",
+                    "thisyear": "This year",
+                    "today": "Today",
+                    "yesterday": "Yesterday",
+                    "lastweek": "Last week",
+                    "lastmonth": "Last month",
+                    "lastyear": "Last year",
+                    "lastsevendays": "Last 7 days",
+                    "lastthirtydays": "Last 30 days",
+                    "custom": "Customize",
+                    "title": "Period",
+                    "start": "Start",
+                    "end": "End"
+                },
+                "title": "Configuration",
+                "scale": {
+                    "raw": "No scale",
+                    "day": "Day",
+                    "week": "Week",
+                    "month": "Month",
+                    "year": "Year",
+                    "title": "Scale"
+                },
+                "cancel": "Cancel",
+                "submit": "Submit"
+            },
+            "success": {
+                "title": "Steps success"
+            }
+        },
+        "distance": {
+            "title": "Distance",
+            "config": {
+                "period": {
+                    "thisweek": "This week",
+                    "thismonth": "This month",
+                    "thisyear": "This year"
+                }
+            }
+        }
     },
     "login": {
         "title": "Login",
@@ -14,17 +72,5 @@
         "password": "Password",
         "submit": "Submit",
         "error": "Username or password incorrect"
-    },
-    "page-not-found": {
-        "title": "404 Error",
-        "text": "Woops. Looks like this page doesn't exist."
-    },
-    "component": {
-        "toolbar": {
-            "logout": "Logout"
-        },
-        "navigation": {
-            "fitness": "Fitness dashboard"
-        }
     }
 }

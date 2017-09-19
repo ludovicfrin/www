@@ -6,22 +6,27 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
  
-import { AuthGuard } from './guard/auth.guard';
-import { AuthService } from './service/auth.service';
-import { FitnessComponent } from './component/fitness/fitness.component';
-import { LoginComponent } from './component/login/login.component';
-import { PageNotFoundComponent } from './component/page-not-found/page-not-found.component';
- 
 import { environment } from '../environments/environment';
+
+import { AuthGuard, AuthService, PageNotFoundComponent } from './shared/';
+import { FitnessComponent, StepComponent } from './fitness/';
+import { LoginComponent } from './login/login.component';
  
 const ROUTING: Routes = [
   {
     path: 'login',
-    component: LoginComponent
+    component: LoginComponent,
+    data: {title: 'Login'}
   }, {
     path: 'fitness',
     component: FitnessComponent,
-    canActivate: [AuthGuard]
+    data: {title: 'Fitness'},
+    canActivate: [AuthGuard],
+  }, {
+    path: 'fitness/step',
+    component: StepComponent,
+    data: {title: 'Steps'},
+    canActivate: [AuthGuard],
   }, {
     path: '',
     redirectTo: '/fitness',
@@ -29,12 +34,13 @@ const ROUTING: Routes = [
   }, {
     path: '**', 
     component: PageNotFoundComponent,
+    data: {title: '404 Error'}
   }
 ];
  
 @NgModule({
   imports: [
-    RouterModule.forRoot(ROUTING, { enableTracing: environment.production })
+    RouterModule.forRoot(ROUTING, { enableTracing: false })
   ],
   exports: [ RouterModule ],
   providers: [ AuthGuard, AuthService ]

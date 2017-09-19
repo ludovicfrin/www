@@ -1,0 +1,56 @@
+﻿<md-sidenav-container>
+  <lf-toolbar title="Fitness Dashboard" i18n-title="@@fitness.title" [navButton]="{ icon: 'menu', action: 'open', target: navigation }"></lf-toolbar>
+  <md-sidenav #navigation><lf-sidenav></lf-sidenav></md-sidenav>
+
+  <div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--3-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone card">
+      <md-toolbar><span i18n="@@fitness.step.current.title">Today steps</span></md-toolbar>
+      <div class="card-content"><a routerLink="/fitness/step"><lf-gauge-chart #todaySteps unit="steps" i18n-unit="@@fitness.step.unit" [goal]="stepsGoal"></lf-gauge-chart></a></div>
+    </div>
+    <div class="mdl-cell mdl-cell--3-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone card">
+      <md-toolbar>
+        <span i18n="@@fitness.step.average.title">Average steps</span>
+        <span class="spacer"></span>
+        <button md-icon-button [mdMenuTriggerFor]="averageStepsMenu">
+          <md-icon>more_vert</md-icon>
+        </button>
+        <md-menu #averageStepsMenu="mdMenu" xPosition="before">
+          <button md-menu-item i18n="@@fitness.step.config.period.thisweek" (click)="readAverageSteps('week')">This week</button>
+          <button md-menu-item i18n="@@fitness.step.config.period.thismonth" (click)="readAverageSteps('month')">This month</button>
+          <button md-menu-item i18n="@@fitness.step.config.period.thisyear" (click)="readAverageSteps('year')">This year</button>
+        </md-menu>
+      </md-toolbar>
+      <div class="card-content"><a routerLink="/fitness/step"><lf-gauge-chart #averageSteps unit="steps" i18n-unit="@@fitness.step.unit" [goal]="stepsGoal"></lf-gauge-chart></a></div>
+    </div>
+    <div class="mdl-cell mdl-cell--3-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone card">
+      <md-toolbar>
+        <span i18n="@@fitness.step.success.title">Steps success</span>
+        <span class="spacer"></span>
+        <button md-icon-button [mdMenuTriggerFor]="successStepsMenu">
+          <md-icon>more_vert</md-icon>
+        </button>
+        <md-menu #successStepsMenu="mdMenu" xPosition="before">
+          <button md-menu-item i18n="@@fitness.step.config.period.thisweek" (click)="readSuccessSteps('week')">This week</button>
+          <button md-menu-item i18n="@@fitness.step.config.period.thismonth" (click)="readSuccessSteps('month')">This month</button>
+          <button md-menu-item i18n="@@fitness.step.config.period.thisyear" (click)="readSuccessSteps('year')">This year</button>
+        </md-menu>
+      </md-toolbar>
+      <div class="card-content"><a routerLink="/fitness/step"><lf-gauge-chart #successSteps unit="%" goal="100"></lf-gauge-chart></a></div>
+    </div> 
+    <div class="mdl-cell mdl-cell--3-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone card">
+      <md-toolbar>
+        <span i18n="@@fitness.distance.title">Distance</span>
+        <span class="spacer"></span>
+        <button md-icon-button [mdMenuTriggerFor]="distanceMenu">
+          <md-icon>more_vert</md-icon>
+        </button>
+        <md-menu #distanceMenu="mdMenu" xPosition="before">
+          <button md-menu-item i18n="@@fitness.distance.config.period.thisweek" (click)="readDistance('week')">This week</button>
+          <button md-menu-item i18n="@@fitness.distance.config.period.thismonth" (click)="readDistance('month')">This month</button>
+          <button md-menu-item i18n="@@fitness.distance.config.period.thisyear" (click)="readDistance('year')">This year</button>
+        </md-menu>      
+      </md-toolbar>
+      <div class="card-content"><a routerLink="/fitness/step"><lf-gauge-chart #distance unit="km"></lf-gauge-chart></a></div>
+    </div>  
+  </div>
+</md-sidenav-container>

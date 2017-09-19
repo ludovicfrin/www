@@ -109,6 +109,10 @@ md-card {
   min-height:100px;
 }
 
+span.spacer {
+  flex: 1 1 auto;
+}
+
 .i18n {
   display:none;	
 }

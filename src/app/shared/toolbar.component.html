@@ -1,0 +1,10 @@
+<md-toolbar color="primary">
+  	<button *ngIf="navButton" md-icon-button md-button (click)="doAction(navButton)">
+      <md-icon>{{ navButton.icon }}</md-icon>
+  	</button>
+    <span [textContent]="title"></span>
+    <span class="spacer"></span>
+    <button *ngFor="let button of actionButtons" md-icon-button md-button (click)="doAction(button)">
+      <md-icon [textContent]="button.icon"></md-icon>
+    </button>
+  </md-toolbar>

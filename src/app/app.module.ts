@@ -3,9 +3,11 @@
  *
  * @author Ludovic FRIN<ludovic@frin.fr>
  */
-import { NgModule } from '@angular/core';
+import { LOCALE_ID, NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { MdButtonModule, MdCardModule, MdGridListModule, MdIconModule, MdInputModule, MdListModule, MdSidenavModule, MdSnackBarModule, MdToolbarModule, MdTooltipModule } from '@angular/material';
+import { MdButtonModule, MdCardModule, MdDatepickerModule, MdDialogModule, MdGridListModule, MdIconModule, 
+  MdInputModule, MdListModule, MdMenuModule, MdNativeDateModule, MdSelectModule, MdSidenavModule, 
+  MdSnackBarModule,  MdToolbarModule, MdTooltipModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 
@@ -15,13 +17,11 @@ import { HighchartsStatic } from 'angular2-highcharts/dist/HighchartsService';
 import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppFirebaseModule } from './app-firebase.module';
-import { AppComponent } from './component/app.component';
+import { AppComponent } from './app.component';
 
-import { FitnessComponent } from './component/fitness/fitness.component';
-import { ColumnChartComponent, GaugeChartComponent } from './component/fitness/chart';
-import { LoginComponent } from './component/login/login.component';
-import { PageNotFoundComponent } from './component/page-not-found/page-not-found.component';
-import { StepService } from './service/step.service';
+import { ColumnChartComponent, FitnessComponent, GaugeChartComponent, StepComponent, StepConfigComponent, StepService } from './fitness/';
+import { LoginComponent } from './login/login.component';
+import { PageNotFoundComponent, SidenavComponent, ToolbarComponent } from './shared/';
 
 declare var require: any;
 export function highchartsFactory() {
@@ -42,20 +42,29 @@ export function highchartsFactory() {
   declarations: [
     AppComponent,
     FitnessComponent,
+    StepComponent,
     ColumnChartComponent,
     GaugeChartComponent,
     LoginComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    SidenavComponent,
+    ToolbarComponent,
+    StepConfigComponent
   ],
   imports: [
     FormsModule,
     BrowserAnimationsModule,
     MdButtonModule,
     MdCardModule,
+    MdDatepickerModule,
+    MdDialogModule,
     MdGridListModule,
     MdIconModule,
     MdInputModule,
     MdListModule,
+    MdMenuModule,
+    MdNativeDateModule,
+    MdSelectModule,
     MdSidenavModule,
     MdSnackBarModule,
     MdToolbarModule,
@@ -64,7 +73,12 @@ export function highchartsFactory() {
     AppRoutingModule,
     AppFirebaseModule
   ],
-  providers: [{ provide: HighchartsStatic, useFactory: highchartsFactory }, StepService],
-  bootstrap: [AppComponent]
+  providers: [
+    { provide: HighchartsStatic, useFactory: highchartsFactory },
+    { provide: LOCALE_ID, useValue: 'fr-FR' },
+    StepService
+  ],
+  entryComponents: [ StepConfigComponent ],
+  bootstrap: [ AppComponent ]
 })
 export class AppModule { }
